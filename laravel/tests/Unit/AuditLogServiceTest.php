@@ -34,7 +34,7 @@ final class AuditLogServiceTest extends TestCase
         $entry = (new AuditLogService())->describe($request, '/api/auth/login', [], null);
 
         $this->assertSame('Dang nhap', $entry['action']);
-        $this->assertSame('Taikhoan', $entry['target_table']);
+        $this->assertSame('Nhatkyhethong', $entry['target_table']);
         $this->assertNull($entry['target_id']);
         $this->assertStringContainsString('Khach chua dang nhap', $entry['note']);
         $this->assertStringNotContainsString('secret', $entry['note']);

@@ -1,0 +1,269 @@
+.organizer-venues {
+    color: #0f172a;
+}
+
+.venues-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.venues-topbar h1 {
+    margin: 0 0 4px;
+}
+
+.organizer-venues .eyebrow {
+    margin: 0 0 6px;
+    color: #4f46e5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.organizer-venues .sub,
+.venue-modal .sub {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.venues-toolbar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 12px 0;
+}
+
+.organizer-venues input,
+.organizer-venues select,
+.venue-modal input,
+.venue-modal select,
+.venue-modal textarea {
+    padding: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #fff;
+    outline: none;
+}
+
+.organizer-venues input:focus,
+.organizer-venues select:focus,
+.venue-modal input:focus,
+.venue-modal select:focus,
+.venue-modal textarea:focus {
+    border-color: rgba(79, 70, 229, 0.55);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.10);
+}
+
+.venues-table-wrap {
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.venues-table {
+    width: 100%;
+    min-width: 840px;
+    border-collapse: collapse;
+}
+
+.venues-table th,
+.venues-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.venues-table th {
+    background: #f8fafc;
+    text-align: left;
+    color: #334155;
+}
+
+.venues-table tbody tr:hover {
+    background: #f1f5f9;
+}
+
+.empty {
+    color: #64748b;
+    text-align: center;
+}
+
+.badge {
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    border: 1px solid #e2e8f0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.badge.ok {
+    background: #dcfce7;
+    color: #166534;
+    border-color: #bbf7d0;
+}
+
+.badge.maint {
+    background: #fef9c3;
+    color: #854d0e;
+    border-color: #fde68a;
+}
+
+.badge.off {
+    background: #fee2e2;
+    color: #991b1b;
+    border-color: #fecaca;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    color: #0f172a;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f8fafc;
+}
+
+.btn.primary {
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+}
+
+.btn.primary:hover {
+    filter: brightness(1.05);
+}
+
+.btn.danger {
+    background: #ef4444;
+    color: #fff;
+    border: none;
+}
+
+.btn.danger:hover {
+    filter: brightness(1.05);
+}
+
+.btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.venues-message {
+    min-height: 20px;
+    margin: 10px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.venue-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background: rgba(15, 23, 42, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.venue-modal.hidden,
+.hidden {
+    display: none;
+}
+
+.venue-modal .modal-content {
+    background: #fff;
+    border-radius: 14px;
+    width: min(860px, 100%);
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+.venue-modal .modal-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.venue-modal .modal-head h2 {
+    margin: 0;
+}
+
+.venue-modal .icon {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.venue-modal .icon:hover {
+    color: #0f172a;
+}
+
+.venue-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.venue-grid .colspan {
+    grid-column: 1 / -1;
+}
+
+.venue-modal label {
+    display: block;
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 6px;
+}
+
+.venue-modal textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.venue-alert {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fecaca;
+    background: #fee2e2;
+    color: #991b1b;
+    font-size: 13px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+    .venues-topbar {
+        display: block;
+    }
+
+    .venues-topbar .btn {
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .venue-grid {
+        grid-template-columns: 1fr;
+    }
+}

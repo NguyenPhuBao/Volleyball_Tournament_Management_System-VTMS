@@ -1,0 +1,463 @@
+:root {
+    --bg: #f4f6fb;
+    --card: #fff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --line: #e2e8f0;
+    --primary: #4f46e5;
+    --danger: #ef4444;
+}
+
+.referee-supervise {
+    color: var(--text);
+}
+
+.referee-supervise .hidden {
+    display: none !important;
+}
+
+.supervise-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.supervise-topbar h1,
+.card-head h2,
+.modal-head h2 {
+    margin: 0;
+}
+
+.eyebrow {
+    margin: 0 0 4px;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .08em;
+}
+
+.sub {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.supervise-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.pill {
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: #334155;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.supervise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.supervise-grid .colspan {
+    grid-column: 1 / -1;
+}
+
+.referee-supervise input,
+.referee-supervise select,
+.referee-supervise textarea,
+.supervision-modal input,
+.supervision-modal select,
+.supervision-modal textarea {
+    padding: 8px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+    outline: none;
+}
+
+.referee-supervise input:focus,
+.referee-supervise select:focus,
+.referee-supervise textarea:focus,
+.supervision-modal input:focus,
+.supervision-modal select:focus,
+.supervision-modal textarea:focus {
+    border-color: rgba(79, 70, 229, .55);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, .10);
+}
+
+.referee-supervise label,
+.supervision-modal label {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.referee-supervise textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.supervise-actions,
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    min-height: 36px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--text);
+    cursor: pointer;
+    text-decoration: none;
+    font: inherit;
+}
+
+.btn:hover {
+    background: #f8fafc;
+}
+
+.btn.primary {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+}
+
+.btn.primary:hover,
+.btn.danger:hover {
+    filter: brightness(1.05);
+}
+
+.btn.danger {
+    background: var(--danger);
+    color: #fff;
+    border: none;
+}
+
+.btn:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+}
+
+.supervise-alert {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #fecaca;
+    background: #fee2e2;
+    color: #991b1b;
+    font-size: 13px;
+}
+
+.supervise-alert.is-ok {
+    border-color: #bbf7d0;
+    background: #dcfce7;
+    color: #166534;
+}
+
+.supervise-alert.hidden {
+    display: none;
+}
+
+.sets {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.set-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.set-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+}
+
+.set-block:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.set-time-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 90px;
+    flex-wrap: wrap;
+}
+
+.set-time-btn {
+    min-height: 32px;
+    padding: 6px 10px;
+    font-weight: 800;
+}
+
+.referee-supervise .set-time-row .btn.set-time-btn.set-time-start,
+.referee-supervise .set-time-row .btn.set-time-btn.set-time-start:disabled {
+    background: #dbeafe !important;
+    border-color: #93c5fd !important;
+    color: #1d4ed8 !important;
+}
+
+.referee-supervise .set-time-row .btn.set-time-btn.set-time-start:hover:not(:disabled) {
+    background: #bfdbfe !important;
+}
+
+.referee-supervise .set-time-row .btn.set-time-btn.set-time-end,
+.referee-supervise .set-time-row .btn.set-time-btn.set-time-end:disabled {
+    background: #ef233c !important;
+    border-color: #ef233c !important;
+    color: #fff !important;
+}
+
+.referee-supervise .set-time-row .btn.set-time-btn.set-time-end:hover:not(:disabled) {
+    background: #dc143c !important;
+}
+
+.referee-supervise .set-time-row .btn.set-time-btn:disabled {
+    opacity: 1 !important;
+}
+
+.set-time-value {
+    min-width: 150px;
+    padding: 6px 8px;
+    border: 1px solid #dbe4ff;
+    border-radius: 8px;
+    background: #f8faff;
+    color: #334155;
+    font-weight: 800;
+}
+
+.set-time-separator {
+    color: #64748b;
+    font-weight: 900;
+}
+
+.set-row .tag {
+    color: #334155;
+    font-weight: 800;
+}
+
+.score-control {
+    display: grid;
+    grid-template-columns: minmax(96px, 1fr) auto 72px;
+    gap: 8px;
+    align-items: center;
+}
+
+.score-entry {
+    width: 100%;
+    min-width: 0;
+}
+
+.score-actions {
+    display: flex;
+    gap: 4px;
+}
+
+.score-step {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(79, 70, 229, .35);
+    border-radius: 9px;
+    background: #eef2ff;
+    color: var(--primary);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.score-step:hover {
+    background: #e0e7ff;
+}
+
+.score-step:disabled {
+    background: #f8fafc;
+    border-color: var(--line);
+    color: #94a3b8;
+}
+
+.score-display {
+    width: 72px;
+    text-align: center;
+    font-weight: 900;
+    border-color: rgba(79, 70, 229, .45) !important;
+    background: #f5f7ff !important;
+    color: #1e1b4b;
+    box-shadow: inset 0 0 0 1px rgba(79, 70, 229, .08);
+}
+
+.score-display:focus {
+    box-shadow: inset 0 0 0 1px rgba(79, 70, 229, .08);
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.supervision-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(15, 23, 42, .45);
+}
+
+.supervision-modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    width: min(920px, 100%);
+    padding: 16px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+}
+
+.modal-content.wide {
+    width: min(1100px, 100%);
+}
+
+.modal-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.icon {
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: var(--text);
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.supervise-table {
+    width: 100%;
+    margin-top: 10px;
+    background: #fff;
+    border-collapse: collapse;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.supervise-table th,
+.supervise-table td {
+    padding: 10px;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.supervise-table th {
+    background: #f8fafc;
+    text-align: left;
+    color: #334155;
+}
+
+.supervise-table tbody tr:hover {
+    background: #f1f5f9;
+}
+
+.empty {
+    color: var(--muted);
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    font-size: 12px;
+}
+
+.badge.wait {
+    background: #fef9c3;
+    color: #854d0e;
+    border-color: #fde68a;
+}
+
+.badge.ok {
+    background: #dcfce7;
+    color: #166534;
+    border-color: #bbf7d0;
+}
+
+.badge.bad {
+    background: #fee2e2;
+    color: #991b1b;
+    border-color: #fecaca;
+}
+
+.badge.gray {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+@media (max-width: 900px) {
+    .supervise-topbar,
+    .card-head {
+        flex-direction: column;
+    }
+
+    .supervise-grid,
+    .set-row {
+        grid-template-columns: 1fr;
+    }
+
+    .set-time-row {
+        padding-left: 0;
+    }
+}
