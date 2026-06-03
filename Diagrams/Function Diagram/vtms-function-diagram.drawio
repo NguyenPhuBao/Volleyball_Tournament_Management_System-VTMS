@@ -1,0 +1,532 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="vtms-function-diagram" name="VTMS Function Diagram">
+    <mxGraphModel dx="1915" dy="1135" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VTMS" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008000;strokeColor=#006100;fontColor=#ffffff;fontStyle=1;" value="VTMS" vertex="1">
+          <mxGeometry height="50" width="170" x="680" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="role_PUBLIC" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="CÔNG KHAI" vertex="1">
+          <mxGeometry height="56" width="170" x="80" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VTMS_PUBLIC" edge="1" parent="1" source="VTMS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="role_PUBLIC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PUBLIC_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Trang chủ" vertex="1">
+          <mxGeometry height="44" width="150" x="130" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_PUBLIC_1" edge="1" parent="1" source="role_PUBLIC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="PUBLIC_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PUBLIC_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Đăng nhập / đăng xuất" vertex="1">
+          <mxGeometry height="44" width="150" x="130" y="267" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_PUBLIC_2" edge="1" parent="1" source="role_PUBLIC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="PUBLIC_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="289" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PUBLIC_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Đăng ký HLV" vertex="1">
+          <mxGeometry height="44" width="150" x="130" y="329" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_PUBLIC_3" edge="1" parent="1" source="role_PUBLIC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="PUBLIC_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PUBLIC_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Đăng ký trọng tài" vertex="1">
+          <mxGeometry height="44" width="150" x="130" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_PUBLIC_4" edge="1" parent="1" source="role_PUBLIC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="PUBLIC_4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="413" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PUBLIC_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Xem đội bóng" vertex="1">
+          <mxGeometry height="44" width="150" x="130" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_PUBLIC_5" edge="1" parent="1" source="role_PUBLIC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="PUBLIC_5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PUBLIC_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Xem lịch thi đấu" vertex="1">
+          <mxGeometry height="44" width="150" x="130" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_PUBLIC_6" edge="1" parent="1" source="role_PUBLIC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="PUBLIC_6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="537" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PUBLIC_7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Xem kết quả" vertex="1">
+          <mxGeometry height="44" width="150" x="130" y="577" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_PUBLIC_7" edge="1" parent="1" source="role_PUBLIC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="PUBLIC_7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="599" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PUBLIC_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Xem bảng xếp hạng" vertex="1">
+          <mxGeometry height="44" width="150" x="130" y="639" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_PUBLIC_8" edge="1" parent="1" source="role_PUBLIC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="PUBLIC_8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="660" />
+            </Array>
+            <mxPoint x="80" y="175.9999999999999" as="sourcePoint" />
+            <mxPoint x="130" y="689" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="role_ADMIN" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="QUẢN TRỊ HỆ THỐNG" vertex="1">
+          <mxGeometry height="56" width="170" x="320" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VTMS_ADMIN" edge="1" parent="1" source="VTMS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="role_ADMIN">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADMIN_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý tài khoản" vertex="1">
+          <mxGeometry height="44" width="150" x="370" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ADMIN_1" edge="1" parent="1" source="role_ADMIN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="ADMIN_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ADMIN_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý người dùng" vertex="1">
+          <mxGeometry height="44" width="150" x="370" y="267" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ADMIN_2" edge="1" parent="1" source="role_ADMIN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="ADMIN_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ADMIN_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Nhật ký hệ thống" vertex="1">
+          <mxGeometry height="44" width="150" x="370" y="329" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ADMIN_3" edge="1" parent="1" source="role_ADMIN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="ADMIN_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ADMIN_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Xác nhận thông tin BTC" vertex="1">
+          <mxGeometry height="44" width="150" x="370" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ADMIN_4" edge="1" parent="1" source="role_ADMIN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="ADMIN_4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="413" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="role_BTC" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="BAN TỔ CHỨC" vertex="1">
+          <mxGeometry height="56" width="170" x="560" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VTMS_BTC" edge="1" parent="1" source="VTMS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="role_BTC">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="645" y="55" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý giải đấu" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_1" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý lịch thi đấu" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="267" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_2" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="289" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý đội bóng" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="329" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_3" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý sân đấu" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_4" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="413" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý trọng tài" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_5" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Duyệt tài khoản HLV" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_6" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="537" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Duyệt tài khoản trọng tài" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="577" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_7" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="599" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý tư cách HLV" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="639" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_8" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="661" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý tư cách VĐV" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="701" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_9" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="723" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý suất đại diện" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="763" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_10" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="785" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý khiếu nại" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_11" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="847" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý kết quả" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="887" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_12" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="909" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Quản lý xếp hạng" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="949" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_13" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="971" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BTC_14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Xác nhận thông tin cá nhân" vertex="1">
+          <mxGeometry height="44" width="150" x="610" y="1011" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_BTC_14" edge="1" parent="1" source="role_BTC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="BTC_14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="1033" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="role_HLV" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="HUẤN LUYỆN VIÊN" vertex="1">
+          <mxGeometry height="56" width="170" x="800" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VTMS_HLV" edge="1" parent="1" source="VTMS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="role_HLV">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="885" y="55" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLV_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Đội bóng của tôi" vertex="1">
+          <mxGeometry height="44" width="150" x="850" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_HLV_1" edge="1" parent="1" source="role_HLV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="HLV_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLV_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Tài khoản VĐV" vertex="1">
+          <mxGeometry height="44" width="150" x="850" y="267" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_HLV_2" edge="1" parent="1" source="role_HLV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="HLV_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="289" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLV_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Thành viên đội" vertex="1">
+          <mxGeometry height="44" width="150" x="850" y="329" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_HLV_3" edge="1" parent="1" source="role_HLV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="HLV_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLV_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Đội hình thi đấu" vertex="1">
+          <mxGeometry height="44" width="150" x="850" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_HLV_4" edge="1" parent="1" source="role_HLV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="HLV_4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="413" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLV_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Đăng ký giải đấu" vertex="1">
+          <mxGeometry height="44" width="150" x="850" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_HLV_5" edge="1" parent="1" source="role_HLV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="HLV_5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLV_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Lịch thi đấu đội" vertex="1">
+          <mxGeometry height="44" width="150" x="850" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_HLV_6" edge="1" parent="1" source="role_HLV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="HLV_6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="537" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLV_7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Kết quả thi đấu" vertex="1">
+          <mxGeometry height="44" width="150" x="850" y="577" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_HLV_7" edge="1" parent="1" source="role_HLV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="HLV_7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="599" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLV_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Gửi khiếu nại kết quả" vertex="1">
+          <mxGeometry height="44" width="150" x="850" y="639" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_HLV_8" edge="1" parent="1" source="role_HLV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="HLV_8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="661" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLV_9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Yêu cầu VĐV" vertex="1">
+          <mxGeometry height="44" width="150" x="850" y="701" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_HLV_9" edge="1" parent="1" source="role_HLV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="HLV_9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="723" />
+            </Array>
+            <mxPoint x="835" y="176" as="sourcePoint" />
+            <mxPoint x="800" y="723.0588235294117" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="role_TT" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="TRỌNG TÀI" vertex="1">
+          <mxGeometry height="56" width="170" x="1040" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VTMS_TT" edge="1" parent="1" source="VTMS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="role_TT">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TT_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Lịch phân công" vertex="1">
+          <mxGeometry height="44" width="150" x="1090" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_TT_1" edge="1" parent="1" source="role_TT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="TT_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TT_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Giám sát trận đấu" vertex="1">
+          <mxGeometry height="44" width="150" x="1090" y="267" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_TT_2" edge="1" parent="1" source="role_TT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="TT_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="289" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TT_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Ghi nhận kết quả" vertex="1">
+          <mxGeometry height="44" width="150" x="1090" y="329" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_TT_3" edge="1" parent="1" source="role_TT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="TT_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TT_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Báo cáo sự cố" vertex="1">
+          <mxGeometry height="44" width="150" x="1090" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_TT_4" edge="1" parent="1" source="role_TT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="TT_4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="413" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TT_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Xin nghỉ phép" vertex="1">
+          <mxGeometry height="44" width="150" x="1090" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_TT_5" edge="1" parent="1" source="role_TT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="TT_5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="role_VDV" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="VẬN ĐỘNG VIÊN" vertex="1">
+          <mxGeometry height="56" width="170" x="1280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VTMS_VDV" edge="1" parent="1" source="VTMS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="role_VDV">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VDV_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Thông báo" vertex="1">
+          <mxGeometry height="44" width="150" x="1330" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VDV_1" edge="1" parent="1" source="role_VDV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="VDV_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VDV_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Lời mời đội bóng" vertex="1">
+          <mxGeometry height="44" width="150" x="1330" y="267" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VDV_2" edge="1" parent="1" source="role_VDV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="VDV_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="290" />
+            </Array>
+            <mxPoint x="1365" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VDV_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Đội bóng của tôi" vertex="1">
+          <mxGeometry height="44" width="150" x="1330" y="329" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VDV_3" edge="1" parent="1" source="role_VDV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="VDV_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VDV_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Đội hình" vertex="1">
+          <mxGeometry height="44" width="150" x="1330" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VDV_4" edge="1" parent="1" source="role_VDV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="VDV_4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="413" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VDV_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Lịch thi đấu cá nhân" vertex="1">
+          <mxGeometry height="44" width="150" x="1330" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VDV_5" edge="1" parent="1" source="role_VDV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="VDV_5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VDV_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Hồ sơ cá nhân" vertex="1">
+          <mxGeometry height="44" width="150" x="1330" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VDV_6" edge="1" parent="1" source="role_VDV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="VDV_6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="537" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VDV_7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Nghỉ phép thi đấu" vertex="1">
+          <mxGeometry height="44" width="150" x="1330" y="577" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_VDV_7" edge="1" parent="1" source="role_VDV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#82b366;" target="VDV_7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="599" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

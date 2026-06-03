@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="vtms-tech-architecture" name="Kiến trúc công nghệ VTMS">
+    <mxGraphModel dx="1178" dy="698" grid="0" gridSize="9" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;fontColor=#111827;align=center;verticalAlign=middle;" value="Kiến trúc công nghệ VTMS" vertex="1">
+          <mxGeometry height="40" width="470" x="960" y="243" as="geometry" />
+        </mxCell>
+        <mxCell id="actors" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#2563EB;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;" value="Client / Người dùng&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Admin, Ban tổ chức, HLV,&lt;br&gt;VĐV, Trọng tài, Khán giả&lt;/font&gt;" vertex="1">
+          <mxGeometry height="89" width="180" x="747" y="307" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1D4ED8;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;" value="Web Client / Browser&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;HTML / CSS / JavaScript&lt;br&gt;Fetch API Client&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110.5" width="210" x="747" y="505.5" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ECFDF3;strokeColor=#16A34A;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="310" width="300" x="1045" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="front-controller" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#22C55E;fontSize=12;align=center;verticalAlign=middle;" value="Front Controller&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;public/index.php&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="240" x="1070" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="router" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#22C55E;fontSize=12;align=center;verticalAlign=middle;" value="Router tự xây dựng&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;route trang + route API&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="240" x="1070" y="392" as="geometry" />
+        </mxCell>
+        <mxCell id="middleware" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#22C55E;fontSize=12;align=center;verticalAlign=middle;" value="Middleware&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Auth / Role phân quyền&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="240" x="1070" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="controller-service-model" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#22C55E;fontSize=12;align=center;verticalAlign=middle;" value="Controller → Service Layer → Model&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Tạo giải, tạo trận, duyệt đội,&lt;br&gt;giám sát, đề cử, kết quả&lt;/font&gt;" vertex="1">
+          <mxGeometry height="62" width="240" x="1070" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="database" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#EA580C;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;" value="MySQL Database&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tài khoản, người dùng, giải đấu,&lt;br&gt;đội bóng, đăng ký, trận đấu,&lt;br&gt;phân công trọng tài, kết quả&lt;/font&gt;" vertex="1">
+          <mxGeometry height="125" width="285" x="1423.5" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="pdo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFEDD5;strokeColor=#EA580C;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="PDO / Prepared Statement" vertex="1">
+          <mxGeometry height="65.5" width="180" x="1476" y="307" as="geometry" />
+        </mxCell>
+        <mxCell id="workbench" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3F4F6;strokeColor=#4B5563;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;" value="MySQL Workbench&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Import vtms5.sql&lt;br&gt;quản trị / kiểm tra CSDL&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="285" x="1423.5" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-actors-browser" edge="1" parent="1" source="actors" style="endArrow=block;html=1;rounded=0;strokeColor=#1D4ED8;strokeWidth=2;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.296;exitY=0.973;exitDx=0;exitDy=0;exitPerimeter=0;" target="browser" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="414" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-browser-backend" edge="1" parent="1" source="browser" style="endArrow=block;html=1;rounded=0;strokeColor=#1D4ED8;strokeWidth=2;fontSize=11;entryX=0.013;entryY=0.464;entryDx=0;entryDy=0;entryPerimeter=0;" target="backend" value="HTTP Request / JSON&lt;br&gt;Fetch API">
+          <mxGeometry relative="1" x="0.207" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="852" y="450" />
+              <mxPoint x="963" y="450" />
+              <mxPoint x="1008" y="450" />
+            </Array>
+            <mxPoint x="1053" y="432" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-backend-pdo" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeColor=#EA580C;strokeWidth=2;fontSize=11;" target="pdo" value="Model gọi CSDL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1404" y="347" />
+            </Array>
+            <mxPoint x="1350" y="347" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-pdo-db" edge="1" parent="1" source="pdo" style="endArrow=block;html=1;rounded=0;strokeColor=#EA580C;strokeWidth=2;fontSize=11;" target="database" value="SQL Query">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-workbench-db" edge="1" parent="1" source="workbench" style="endArrow=block;html=1;rounded=0;strokeColor=#4B5563;strokeWidth=2;fontSize=11;" target="database" value="Import / quản trị">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,2 @@
+Truy cập : https://app.diagrams.net/
+Chọn File -> Open from -> Device -> chọn file "vtms-technology-architecture.drawio"

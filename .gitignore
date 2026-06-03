@@ -1,0 +1,56 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies installed locally
+/vendor/
+/node_modules/
+
+# Runtime output, local server logs, generated screenshots/docs
+/runtime/*
+!/runtime/.gitkeep
+
+# User uploads
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# Logs, caches, and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.pid
+/logs/
+/cache/
+/tmp/
+/temp/
+.vtms_schema_actual.json
+
+# Local tool downloads and generated reports
+/tools/*.exe
+/.vtms_schema_actual.json
+
+# Node/Python test artifacts
+/coverage/
+/test-results/
+/playwright-report/
+/.pytest_cache/
+/.phpunit.result.cache
+__pycache__/
+*.py[cod]
+
+# IDE and OS metadata
+.idea/
+.vscode/
+.vs/
+*.swp
+*.swo
+*.user
+*.suo
+*.sln.docstates
+.DS_Store
+Thumbs.db
+
+# Local agent/tooling state
+.sixth/

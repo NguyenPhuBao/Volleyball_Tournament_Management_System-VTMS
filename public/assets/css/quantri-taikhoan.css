@@ -1,0 +1,218 @@
+.admin-users {
+    display: grid;
+    gap: 18px;
+}
+
+.users-topbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.users-topbar h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.users-toolbar {
+    display: flex;
+    gap: 10px;
+}
+
+.users-toolbar input,
+.users-toolbar select,
+.modal-content input,
+.modal-content select {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--text);
+    font: inherit;
+    min-height: 40px;
+    padding: 8px 10px;
+}
+
+.users-toolbar input {
+    flex: 1;
+    min-width: 220px;
+}
+
+.table-wrap {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.users-table {
+    border-collapse: collapse;
+    min-width: 760px;
+    width: 100%;
+}
+
+.users-table th,
+.users-table td {
+    border-bottom: 1px solid var(--line);
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.users-table th {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.users-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.table-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--text);
+    cursor: pointer;
+    display: inline-flex;
+    font: inherit;
+    font-weight: 700;
+    justify-content: center;
+    min-height: 38px;
+    padding: 0 12px;
+}
+
+.btn.primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn.danger {
+    border-color: #fecdca;
+    color: var(--danger);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.status-pill {
+    border-radius: 999px;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 6px 8px;
+}
+
+.status-pill.active {
+    background: #dcfae6;
+    color: #067647;
+}
+
+.status-pill.pending {
+    background: #fef7c3;
+    color: #a15c07;
+}
+
+.status-pill.locked,
+.status-pill.deleted {
+    background: #fee4e2;
+    color: #b42318;
+}
+
+.empty {
+    color: var(--muted);
+    text-align: center;
+}
+
+.user-modal {
+    align-items: center;
+    background: rgba(24, 33, 47, 0.48);
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 20;
+}
+
+.user-modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 22px 60px rgba(24, 33, 47, 0.22);
+    display: grid;
+    gap: 8px;
+    max-width: 420px;
+    padding: 22px;
+    width: 100%;
+}
+
+.modal-content h2 {
+    font-size: 22px;
+    margin: 0 0 8px;
+}
+
+.modal-content label {
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.field-hint {
+    color: var(--muted);
+    display: none;
+    font-size: 13px;
+    margin: -2px 0 2px;
+}
+
+.field-hint.visible {
+    display: block;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.form-message {
+    color: var(--danger);
+    margin: 0;
+    min-height: 22px;
+}
+
+.form-message.success {
+    color: var(--primary-dark);
+}
+
+@media (max-width: 640px) {
+    .users-topbar,
+    .users-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .users-toolbar input {
+        min-width: 0;
+    }
+}
