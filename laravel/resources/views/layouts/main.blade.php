@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $pageTitle ?? 'VTMS' }}</title>
+    @foreach (($styles ?? []) as $style)
+        <link rel="stylesheet" href="{{ asset('assets/'.ltrim($style, '/')) }}">
+    @endforeach
 </head>
 <body>
     <header>
@@ -21,5 +24,9 @@
     <main>
         @yield('content')
     </main>
+
+    @foreach (($scripts ?? []) as $script)
+        <script src="{{ asset('assets/'.ltrim($script, '/')) }}"></script>
+    @endforeach
 </body>
 </html>
