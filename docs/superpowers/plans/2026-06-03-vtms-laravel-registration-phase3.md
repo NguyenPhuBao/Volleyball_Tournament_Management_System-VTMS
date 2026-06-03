@@ -14,17 +14,17 @@
 
 - Create: `laravel/tests/Feature/PublicRegistrationRouteCompatibilityTest.php`
   - Verifies all public registration route aliases exist, pages render, and invalid API payloads return legacy `422` JSON.
-- Create: `laravel/app/Http/Controllers/Public/CoachRegistrationController.php`
+- Create: `laravel/app/Http/Controllers/PublicSite/CoachRegistrationController.php`
   - Handles `/huanluyenvien/dang-ky`, `/api/coach/register/options`, and coach registration POST aliases.
-- Create: `laravel/app/Http/Controllers/Public/RefereeRegistrationController.php`
+- Create: `laravel/app/Http/Controllers/PublicSite/RefereeRegistrationController.php`
   - Handles referee registration pages/options/POST aliases.
-- Create: `laravel/app/Repositories/Public/CoachRegistrationRepository.php`
+- Create: `laravel/app/Repositories/PublicSite/CoachRegistrationRepository.php`
   - Encapsulates `Taikhoan`, `Nguoidung`, `Huanluyenvien`, `YeuCauXacNhan`, `Nhatkyhethong`, and `Khuvuc` reads/writes for coach registration.
-- Create: `laravel/app/Repositories/Public/RefereeRegistrationRepository.php`
+- Create: `laravel/app/Repositories/PublicSite/RefereeRegistrationRepository.php`
   - Encapsulates `Taikhoan`, `Nguoidung`, `Trongtai`, `YeuCauXacNhan`, `Nhatkyhethong`, and referee level reads/writes.
-- Create: `laravel/app/Services/Public/CoachRegistrationService.php`
+- Create: `laravel/app/Services/PublicSite/CoachRegistrationService.php`
   - Ports legacy coach validation, role lookup, national federation organizer guard, transaction, and response shape.
-- Create: `laravel/app/Services/Public/RefereeRegistrationService.php`
+- Create: `laravel/app/Services/PublicSite/RefereeRegistrationService.php`
   - Ports legacy referee validation, level lookup, role lookup, national federation organizer guard, transaction, and response shape.
 - Create: `laravel/resources/views/public/coach-register.blade.php`
 - Create: `laravel/resources/views/public/referee-register.blade.php`
@@ -137,9 +137,9 @@ git commit -m "test: add Laravel public registration route tests"
 ### Task 2: Coach Registration Port
 
 **Files:**
-- Create: `laravel/app/Http/Controllers/Public/CoachRegistrationController.php`
-- Create: `laravel/app/Repositories/Public/CoachRegistrationRepository.php`
-- Create: `laravel/app/Services/Public/CoachRegistrationService.php`
+- Create: `laravel/app/Http/Controllers/PublicSite/CoachRegistrationController.php`
+- Create: `laravel/app/Repositories/PublicSite/CoachRegistrationRepository.php`
+- Create: `laravel/app/Services/PublicSite/CoachRegistrationService.php`
 - Create: `laravel/resources/views/public/coach-register.blade.php`
 - Modify: `laravel/routes/web.php`
 - Modify: `laravel/routes/api.php`
@@ -201,9 +201,9 @@ Expected: Coach tests pass; referee tests still fail until Task 3 is complete.
 ### Task 3: Referee Registration Port
 
 **Files:**
-- Create: `laravel/app/Http/Controllers/Public/RefereeRegistrationController.php`
-- Create: `laravel/app/Repositories/Public/RefereeRegistrationRepository.php`
-- Create: `laravel/app/Services/Public/RefereeRegistrationService.php`
+- Create: `laravel/app/Http/Controllers/PublicSite/RefereeRegistrationController.php`
+- Create: `laravel/app/Repositories/PublicSite/RefereeRegistrationRepository.php`
+- Create: `laravel/app/Services/PublicSite/RefereeRegistrationService.php`
 - Create: `laravel/resources/views/public/referee-register.blade.php`
 - Modify: `laravel/routes/web.php`
 - Modify: `laravel/routes/api.php`
