@@ -110,6 +110,9 @@ final class AuthService
                 'can_approve_coach_accounts' => $hasOrganizerAuthority
                     && $isHighestOrganizerLevel
                     && $unitTypeCode === 'LIEN_DOAN_BONG_CHUYEN_VN',
+                'can_approve_referee_accounts' => $hasOrganizerAuthority
+                    && $isHighestOrganizerLevel
+                    && $unitTypeCode === 'LIEN_DOAN_BONG_CHUYEN_VN',
             ];
         }
 

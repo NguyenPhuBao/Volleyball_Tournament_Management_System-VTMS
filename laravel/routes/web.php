@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AdminSystemLogController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\Organizer\OrganizerCoachAccountController;
 use App\Http\Controllers\Organizer\OrganizerDashboardController;
+use App\Http\Controllers\Organizer\OrganizerRefereeAccountController;
 use App\Http\Controllers\Organizer\OrganizerVenueController;
 use App\Http\Controllers\PublicSite\CoachRegistrationController;
 use App\Http\Controllers\PublicSite\RefereeRegistrationController;
@@ -43,5 +44,6 @@ Route::middleware(['legacy.auth', 'legacy.role:BAN_TO_CHUC,ADMIN'])->group(funct
 
 Route::middleware(['legacy.auth', 'legacy.role:BAN_TO_CHUC'])->group(function (): void {
     Route::get('/ban-to-chuc/tai-khoan-hlv', [OrganizerCoachAccountController::class, 'page']);
+    Route::get('/ban-to-chuc/tai-khoan-trong-tai', [OrganizerRefereeAccountController::class, 'page']);
     Route::get('/ban-to-chuc/san-dau', [OrganizerVenueController::class, 'page']);
 });
