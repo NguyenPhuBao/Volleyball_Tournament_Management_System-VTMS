@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminAccountController;
 use App\Http\Controllers\Admin\AdminOrganizerChangeRequestController;
 use App\Http\Controllers\Admin\AdminSystemLogController;
 use App\Http\Controllers\Admin\AdminUserController;
+use App\Http\Controllers\Organizer\OrganizerVenueController;
 use App\Http\Controllers\PublicSite\CoachRegistrationController;
 use App\Http\Controllers\PublicSite\RefereeRegistrationController;
 use App\Http\Controllers\Shared\AccountSecurityController;
@@ -53,4 +54,17 @@ Route::middleware(['legacy.auth', 'legacy.role:ADMIN'])->group(function (): void
     Route::get('/admin/organizer-change-requests/{id}', [AdminOrganizerChangeRequestController::class, 'show'])->whereNumber('id');
     Route::post('/admin/organizer-change-requests/{id}/approve', [AdminOrganizerChangeRequestController::class, 'approve'])->whereNumber('id');
     Route::post('/admin/organizer-change-requests/{id}/reject', [AdminOrganizerChangeRequestController::class, 'reject'])->whereNumber('id');
+});
+
+Route::middleware(['legacy.auth', 'legacy.role:BAN_TO_CHUC'])->group(function (): void {
+    Route::get('/organizer/competition-locations', [OrganizerVenueController::class, 'locations']);
+    Route::get('/organizer/venues', [OrganizerVenueController::class, 'index']);
+    Route::post('/organizer/venues', [OrganizerVenueController::class, 'store']);
+    Route::get('/organizer/venues/{venueId}', [OrganizerVenueController::class, 'show'])->whereNumber('venueId');
+    Route::match(['put', 'patch'], '/organizer/venues/{venueId}', [OrganizerVenueController::class, 'update'])->whereNumber('venueId');
+    Route::post('/organizer/venues/{venueId}/update', [OrganizerVenueController::class, 'update'])->whereNumber('venueId');
+    Route::post('/organizer/venues/{venueId}/deactivate', [OrganizerVenueController::class, 'deactivate'])->whereNumber('venueId');
+    Route::post('/organizer/venues/{venueId}/remove', [OrganizerVenueController::class, 'deactivate'])->whereNumber('venueId');
+    Route::delete('/organizer/venues/{venueId}', [OrganizerVenueController::class, 'deactivate'])->whereNumber('venueId');
+    Route::post('/organizer/venues/{venueId}/delete', [OrganizerVenueController::class, 'deactivate'])->whereNumber('venueId');
 });

@@ -5,6 +5,8 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminOrganizerChangeRequestController;
 use App\Http\Controllers\Admin\AdminSystemLogController;
 use App\Http\Controllers\Admin\AdminUserController;
+use App\Http\Controllers\Organizer\OrganizerDashboardController;
+use App\Http\Controllers\Organizer\OrganizerVenueController;
 use App\Http\Controllers\PublicSite\CoachRegistrationController;
 use App\Http\Controllers\PublicSite\RefereeRegistrationController;
 use App\Http\Controllers\Shared\AccountSecurityController;
@@ -32,4 +34,12 @@ Route::middleware(['legacy.auth', 'legacy.role:ADMIN'])->group(function (): void
     Route::get('/admin/nguoi-dung', [AdminUserController::class, 'page']);
     Route::get('/admin/logs', [AdminSystemLogController::class, 'page']);
     Route::get('/admin/xac-nhan-thong-tin-btc', [AdminOrganizerChangeRequestController::class, 'page']);
+});
+
+Route::middleware(['legacy.auth', 'legacy.role:BAN_TO_CHUC,ADMIN'])->group(function (): void {
+    Route::get('/ban-to-chuc', [OrganizerDashboardController::class, 'page']);
+});
+
+Route::middleware(['legacy.auth', 'legacy.role:BAN_TO_CHUC'])->group(function (): void {
+    Route::get('/ban-to-chuc/san-dau', [OrganizerVenueController::class, 'page']);
 });

@@ -8,9 +8,13 @@ use Illuminate\Http\Request;
 
 final class RoleMiddleware
 {
-    public function handle(Request $request, Closure $next, string $roles): mixed
+    public function handle(Request $request, Closure $next, string ...$roles): mixed
     {
-        $requiredRoles = array_map('trim', explode(',', $roles));
+        $requiredRoles = collect($roles)
+            ->flatMap(fn (string $role): array => array_map('trim', explode(',', $role)))
+            ->filter()
+            ->values()
+            ->all();
 
         if (!LegacySessionUser::check()) {
             return $request->expectsJson()
