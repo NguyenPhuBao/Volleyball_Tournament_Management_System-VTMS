@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminAccountController;
 use App\Http\Controllers\Admin\AdminOrganizerChangeRequestController;
 use App\Http\Controllers\Admin\AdminSystemLogController;
 use App\Http\Controllers\Admin\AdminUserController;
+use App\Http\Controllers\Organizer\OrganizerCoachAccountController;
 use App\Http\Controllers\Organizer\OrganizerVenueController;
 use App\Http\Controllers\PublicSite\CoachRegistrationController;
 use App\Http\Controllers\PublicSite\RefereeRegistrationController;
@@ -57,6 +58,11 @@ Route::middleware(['legacy.auth', 'legacy.role:ADMIN'])->group(function (): void
 });
 
 Route::middleware(['legacy.auth', 'legacy.role:BAN_TO_CHUC'])->group(function (): void {
+    Route::get('/organizer/coach-accounts', [OrganizerCoachAccountController::class, 'index']);
+    Route::get('/organizer/coach-accounts/{accountId}', [OrganizerCoachAccountController::class, 'show'])->whereNumber('accountId');
+    Route::post('/organizer/coach-accounts/{accountId}/approve', [OrganizerCoachAccountController::class, 'approve'])->whereNumber('accountId');
+    Route::post('/organizer/coach-accounts/{accountId}/reject', [OrganizerCoachAccountController::class, 'reject'])->whereNumber('accountId');
+
     Route::get('/organizer/competition-locations', [OrganizerVenueController::class, 'locations']);
     Route::get('/organizer/venues', [OrganizerVenueController::class, 'index']);
     Route::post('/organizer/venues', [OrganizerVenueController::class, 'store']);
