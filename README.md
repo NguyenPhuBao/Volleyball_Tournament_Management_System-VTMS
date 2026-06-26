@@ -258,36 +258,6 @@ Dung server/tunnel:
 Stop-Process -Name php, cloudflared -Force
 ```
 
-## Script ho tro
 
-Thu muc `tools/` co cac script phu tro:
 
-- `generate_vtms_testcases.py`: tao test case/tai lieu test.
-- `capture_vtms_screenshots.js`, `capture_vtms_workflow_screenshots.js`, `capture_vtms_main_flow_steps.js`: chup man hinh quy trinh.
-- `build_vtms_user_guide_docx.py`: tao tai lieu huong dan su dung tu anh chup man hinh.
-- `cloudflared.exe`: binary local de chay tunnel, khong nen commit len GitHub.
 
-Cac file sinh ra thuong nam trong `runtime/` va duoc ignore.
-
-## Ghi chu khi day len GitHub
-
-- Khong commit `.env`.
-- Khong commit `runtime/`.
-- Khong commit file upload trong `public/uploads/`.
-- Khong commit binary local nhu `tools/cloudflared.exe`.
-- Nen commit `.env.example`, `vtms5.sql`, source trong `app/`, `public/assets/`, `Documents/`, `Diagrams/` neu day la tai lieu chinh thuc cua mon hoc.
-
-Neu cac file local da bi Git track tu truoc, `.gitignore` khong tu bo track. Co the dung:
-
-```powershell
-git rm --cached tools/cloudflared.exe runtime/php-server.err .vtms_schema_actual.json
-```
-
-Chi chay lenh tren neu chac chan cac file do khong can nam trong repository.
-
-## Loi thuong gap
-
-- Khong vao duoc trang: kiem tra PHP server dang chay va truy cap dung `http://localhost:8000`.
-- Loi ket noi CSDL: kiem tra `.env`, MySQL dang chay, va da import `vtms5.sql`.
-- Dang nhap that bai: kiem tra database `vtms` da duoc import lai tu file dump moi nhat; tai khoan seed dung mat khau `123456`.
-- Bi chuyen sang HTTPS khi chay Apache local: do rule trong `public/.htaccess`; dung PHP built-in server hoac cau hinh HTTPS cho Apache.
